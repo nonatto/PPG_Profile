@@ -111,7 +111,7 @@
           <div class="col m12 s12">
             <ul class="tabs tabs-fixed-width tabs-ppgprofile">
               <li class="tab col s12 m6">
-                <a href="#add-instituicao">
+                <a href="#add-curso">
                   <i class="fa fa-plus fa-ppgprofile" aria-hidden="true" class="active"></i>Cadastrar Curso
                 </a>
               </li>
@@ -121,35 +121,46 @@
                 </a>
               </li>
             </ul>
-            <div id="add-instituicao">
+            <div id="add-curso">
               <form class="ppgprofile formulario-cadastro">
                 <div class="row">
                   <div class="">
-                    <div class="input-field col m12 s12">
-                        <input id="icon_prefix" type="text" class="validate" required>
-                        <label>Nome</label>
-                    </div>
-                    <div class="input-field col m12 s12">
-                        <input id="icon_prefix" type="text" class="validate" required>
-                        <label>Campus</label>
-                    </div>
-                    <div class="input-field col m12 s12">
-                        <input id="icon_prefix" type="text" class="validate" required>
-                        <label>Turno</label>
-                    </div>
-                    <div class="input-field col m12 s12">
-                        <input id="icon_prefix" type="text" class="validate" required>
-                        <label>Ano de criação</label>
-                    </div>
-                    <div class="input-field col m12 s12">
-                        <input id="icon_prefix" type="text" class="validate" required>
-                        <label>Conceito MEC</label>
-                    </div>
+                    <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header active"><i class="fa fa-user" aria-hidden="true"></i>Informações do Curso</div>
+                      <div class="collapsible-body"><span>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Nome</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Campus</label>
+                        </div>
+                        <div class="input-field">
+                          <select>
+                            <option value="" disabled selected>Escolha o turno do curso</option>
+                            <option value="1">Matutino</option>
+                            <option value="2">Vespertino</option>
+                            <option value="2">Noturno</option>
+                          </select>
+                        </div>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="number" class="validate" required>
+                            <label>Ano de Criação</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="number" class="validate" required>
+                            <label>Conceito MEC</label>
+                        </div>
+                      </span></div>
+                    </li>
+                  </ul>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col m12">
-                    <div class="button-login">
+                    <div class="button-login tamanho">
                       <a class="waves-effect waves-light btn-large">Cadastrar</a>
                     </div>
                   </div>
