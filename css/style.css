@@ -72,10 +72,12 @@ nav ul a:hover {
   padding: 50px 0;
 }
 
+.input-field label {
+  color: #8492a6;
+}
 
 a{
   color: #3c0014;
-  font-weight: bold !important;
 }
 
 .ppgprofile h1, h2, h3, h4, h5, h6{
