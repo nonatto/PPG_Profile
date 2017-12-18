@@ -46,10 +46,32 @@ html{
   margin: 0 auto;
 }
 
-
 label{
   color: #8492a6;
 }
+
+/* PPG PROFILE PAGINAS */
+
+nav .brand-logo {
+    font-size: 24px;
+}
+
+nav ul a.active {
+    color: #FFF;
+}
+
+nav ul a {
+    color: #8492a6;
+}
+
+nav ul a:hover {
+    color: #FFF;
+}
+
+.formulario-cadastro{
+  padding: 50px 0;
+}
+
 
 a{
   color: #3c0014;
@@ -127,12 +149,12 @@ h5{
 /*Páginas Internas*/
 
 .ppgprofile nav{
-  background-color: #3c0014;
+  background-color: #090a37;
 }
 
 .footer-copyright {
   padding: 20px 0;
-  background-color: #3c0014;
+  background-color: #090a37;
   color: #FFF;
   position: absolute;
   bottom: 0px;
@@ -145,24 +167,23 @@ a.suggest{
 
 .profile{
   background: none;
-  color: #ffc30f;
-  font-weight: bold;
+  color: #FFF;
   font-size: 1rem;
 }
 
 .profile-dropdown{
   background: none;
   color: #3c0014;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 i.right {
   margin-left: 0;
-  color: #ffc30f;
+  color: #FFF;
 }
 
 .dropdown-ppgprofile{
-  min-width: 200px;
+  min-width: 230px;
   top: auto !important;
 }
 
@@ -196,19 +217,19 @@ i.fa.fa-ppgprofile {
 }
 
 .tabs-ppgprofile .tab a{
-  color: #3c0014;
+  color: #9f0637;
 }
 
 .tabs-ppgprofile .tab a:hover {
-  color: #ffc30f;
+  color: #090a37;
 }
 
 .tabs-ppgprofile .tab a.active {
-  color: #ffc30f;
+  color: #9f0637;
 }
 
 .tabs-ppgprofile .indicator {
-  background-color: #ffc30f;
+  background-color: #9f0637;
 }
 
 .tabs-ppgprofile-space{
@@ -265,7 +286,16 @@ span.uk-link{
 }
 
 .dropdown-content li>span {
-  color: #ffc30f;
+  color: #090a37;
+}
+
+.formulario-cadastro{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.formulario-cadastro input{
+  border-bottom: 1px solid #ced4da !important;
 }
 
 .area-ingredients i{
