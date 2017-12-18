@@ -1,20 +1,51 @@
 /*!
- * Equipe Brewday
+ * Equipe PPG Profile
  * Copyright 2017 Todos os Direitos Reservados
  */
 
 /*CSS Reset*/
-
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
+/* GERAL */
 html{
   color: #8492a6;
-  font-family: 'Saira Semi Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
+
+/* PPG PROFILE LOGIN*/
+.bg-login{
+  background: #090a37;
+}
+
+.bg-login h4{
+  color: #FFF;
+}
+
+.bg-login label{
+  color: #8492a6;
+}
+
+.title-login h4{
+  font-weight: 400;
+}
+
+.button-login .btn-large{
+  background-color: #9f0637;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.formulario-login{
+  width: 50%;
+  margin: 0 auto;
+}
+
 
 label{
   color: #8492a6;
@@ -25,8 +56,8 @@ a{
   font-weight: bold !important;
 }
 
-.brewday h1, h2, h3, h4, h5, h6{
-  font-family: 'Saira Semi Condensed', sans-serif;
+.ppgprofile h1, h2, h3, h4, h5, h6{
+  font-family: 'Oswald', sans-serif;
 }
 
 h5{
@@ -46,11 +77,11 @@ h5{
   text-align: center;
 }
 
-.brewday input{
+.ppgprofile input{
   border-color: #8492a6;
 }
 
-.brewday .input-field .prefix {
+.ppgprofile .input-field .prefix {
   position: relative;
   font-size: 18px;
   width: 0;
@@ -58,13 +89,7 @@ h5{
   margin-right: 2rem;
 }
 
-.button-login .btn-large{
-  background-color: #ffc30f;
-  color: #fff;
-  font-weight: bold;
-  width: 100%;
-  margin: 20px 0;
-}
+
 
 .form{
   /*min-width: 500px;*/
@@ -85,9 +110,7 @@ h5{
   position: fixed;
 }
 
-.title-login h4{
-  font-weight: bold;
-}
+
 
 .margin-bottom{
   margin-bottom: 0;
@@ -103,7 +126,7 @@ h5{
 
 /*Páginas Internas*/
 
-.brewday nav{
+.ppgprofile nav{
   background-color: #3c0014;
 }
 
@@ -138,12 +161,12 @@ i.right {
   color: #ffc30f;
 }
 
-.dropdown-brewday{
+.dropdown-ppgprofile{
   min-width: 200px;
   top: auto !important;
 }
 
-.dropdown-brewday >li> a{
+.dropdown-ppgprofile >li> a{
   color: #3c0014;
 }
 
@@ -164,35 +187,35 @@ img.profile-avatar {
   border-radius: 50%;
 }
 
-.card-title-brewday{
+.card-title-ppgprofile{
   padding: 0 24px 24px 24px;
 }
 
-i.fa.fa-brewday {
+i.fa.fa-ppgprofile {
   margin: 0 10px 0 0;
 }
 
-.tabs-brewday .tab a{
+.tabs-ppgprofile .tab a{
   color: #3c0014;
 }
 
-.tabs-brewday .tab a:hover {
+.tabs-ppgprofile .tab a:hover {
   color: #ffc30f;
 }
 
-.tabs-brewday .tab a.active {
+.tabs-ppgprofile .tab a.active {
   color: #ffc30f;
 }
 
-.tabs-brewday .indicator {
+.tabs-ppgprofile .indicator {
   background-color: #ffc30f;
 }
 
-.tabs-brewday-space{
+.tabs-ppgprofile-space{
   padding: 20px .75rem !important;
 }
 
-.tabs-brewday{
+.tabs-ppgprofile{
   background:none;
 }
 
@@ -237,7 +260,7 @@ span.uk-link{
   padding-top: 20px;
 }
 
-.brewday{
+.ppgprofile{
   color: #8492a6 !important;
 }
 
@@ -256,11 +279,3 @@ h5.area-ingredients {
 .area-ingredients a {
     color: #8492a6 !important;
 }
-/*
-.tabs-brewday{
-    position: none;
-}
-
-ul#dropdown2 {
-    margin-top: 50px;
-}*/

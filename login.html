@@ -11,53 +11,42 @@
   <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <!-- Import fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,500,600,700,800,900" rel="stylesheet">
-  <title>Brewday | Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+  <title>PPG Profile | Login</title>
 </head>
-<body>
-  <div class="row brewday">
+<body class="bg-login">
+  <div class="row ppgprofile">
     <div class="form-login">
       <div class="container-login">
         <div class="col m4 s12">
-          <div class="form col m4 s12">
+          <div class="form col m12 s12">
             <div class="logo-login">
-              <img src="images/logo.png" alt="Brewday">
+              <img src="images/logo.png" alt="PPG Profile">
             </div>
             <div class="title-login">
               <h4>Login</h4>
             </div>
-            <form class="col s12">
+            <form class="formulario-login">
               <div class="row">
                 <div class="input-field col s12">
                     <input id="icon_prefix" type="text" class="validate" required>
-                    <label for="icon_prefix"><i class="fa fa-user-o prefix" aria-hidden="true"></i> Username</label>
+                    <label for="icon_prefix"><i class="fa fa-envelope-o prefix" aria-hidden="true"></i> E-mail</label>
                 </div>
                 <div class="input-field col s12">
                   <input id="icon_prefix" type="password" class="validate" required>
-                  <label for="icon_prefix"><i class="fa fa-lock prefix" aria-hidden="true"></i> Password</label>
+                  <label for="icon_prefix"><i class="fa fa-lock prefix" aria-hidden="true"></i> Senha</label>
                 </div>
               </div>
               <div class="row">
                 <p>
                   <input type="checkbox" id="test5" />
-                  <label for="test5">Keep me logged in.</label>
+                  <label for="test5">Mantenha-me conectado.</label>
                 </p>
                 <div class="button-login">
                   <a class="waves-effect waves-light btn-large">Login</a>
                 </div>
-                <div class="create-account">
-                  <h5>Don't have an account? <a href="/register.html">Register!</a></h5>
-                </div>
-                <div class="remember-password">
-                  <a href="/forgot-password">Forgot your password?</a>
-                </div>
               </div>
             </form>
-          </div>
-        </div>
-        <div class="col m8 hide-on-small-only">
-          <div class="bg-login">
-            <img src="images/bg.jpg" alt="">
           </div>
         </div>
       </div>
