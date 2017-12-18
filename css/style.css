@@ -1,0 +1,266 @@
+/*!
+ * Equipe Brewday
+ * Copyright 2017 Todos os Direitos Reservados
+ */
+
+/*CSS Reset*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html{
+  color: #8492a6;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+label{
+  color: #8492a6;
+}
+
+a{
+  color: #3c0014;
+  font-weight: bold !important;
+}
+
+.brewday h1, h2, h3, h4, h5, h6{
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+h5{
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.logo-login{
+  padding: 100px 0 20px 0;
+}
+
+.title-login{
+  color: #3c0014;
+}
+
+.form-login{
+  text-align: center;
+}
+
+.brewday input{
+  border-color: #8492a6;
+}
+
+.brewday .input-field .prefix {
+  position: relative;
+  font-size: 18px;
+  width: 0;
+  margin-top: 0;
+  margin-right: 2rem;
+}
+
+.button-login .btn-large{
+  background-color: #ffc30f;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.form{
+  /*min-width: 500px;*/
+  padding: 0 40px !important;
+  display: -ms-flexbox;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	position: fixed;
+}
+
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    border: 1px solid #8492a6;
+}
+
+.bg-login{
+  position: fixed;
+}
+
+.title-login h4{
+  font-weight: bold;
+}
+
+.margin-bottom{
+  margin-bottom: 0;
+}
+
+.form p {
+  padding: 0 .75rem;
+}
+
+.button-login {
+    padding: 0 .75rem;
+}
+
+/*Páginas Internas*/
+
+.brewday nav{
+  background-color: #3c0014;
+}
+
+.footer-copyright {
+  padding: 20px 0;
+  background-color: #3c0014;
+  color: #FFF;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+a.suggest{
+  color: #ffc30f;
+}
+
+.profile{
+  background: none;
+  color: #ffc30f;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.profile-dropdown{
+  background: none;
+  color: #3c0014;
+  font-size: 20px;
+}
+
+i.right {
+  margin-left: 0;
+  color: #ffc30f;
+}
+
+.dropdown-brewday{
+  min-width: 200px;
+  top: auto !important;
+}
+
+.dropdown-brewday >li> a{
+  color: #3c0014;
+}
+
+.space{
+  display: block;
+  line-height: 22px;
+  padding: 14px 16px;
+}
+
+.main{
+  padding: 50px 0;
+}
+
+img.profile-avatar {
+  max-width: 100px;
+  margin: 20px 0 10px 0;
+  border: 3px solid #ffc30f;
+  border-radius: 50%;
+}
+
+.card-title-brewday{
+  padding: 0 24px 24px 24px;
+}
+
+i.fa.fa-brewday {
+  margin: 0 10px 0 0;
+}
+
+.tabs-brewday .tab a{
+  color: #3c0014;
+}
+
+.tabs-brewday .tab a:hover {
+  color: #ffc30f;
+}
+
+.tabs-brewday .tab a.active {
+  color: #ffc30f;
+}
+
+.tabs-brewday .indicator {
+  background-color: #ffc30f;
+}
+
+.tabs-brewday-space{
+  padding: 20px .75rem !important;
+}
+
+.tabs-brewday{
+  background:none;
+}
+
+.uk-placeholder {
+    margin-bottom: 20px;
+    padding: 30px 30px;
+    background: 0 0;
+    border: 1px dashed #e5e5e5;
+    margin-top: 10px;
+}
+
+.uk-form-custom {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.uk-form-custom input[type=file] {
+    font-size: 500px;
+    overflow: hidden;
+}
+
+.uk-form-custom input[type=file], .uk-form-custom select {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    -webkit-appearance: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+span.uk-link{
+  color: #ffc30f;
+  font-weight: bold;
+}
+
+.content-tabs{
+  padding-top: 20px;
+}
+
+.brewday{
+  color: #8492a6 !important;
+}
+
+.dropdown-content li>span {
+  color: #ffc30f;
+}
+
+.area-ingredients i{
+  padding: 20px;
+}
+
+h5.area-ingredients {
+    padding: 0 .75rem;
+}
+
+.area-ingredients a {
+    color: #8492a6 !important;
+}
+/*
+.tabs-brewday{
+    position: none;
+}
+
+ul#dropdown2 {
+    margin-top: 50px;
+}*/
