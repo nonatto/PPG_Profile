@@ -290,8 +290,17 @@ span.uk-link{
 }
 
 .formulario-cadastro{
-  width: 50%;
+  /* width: 50%; */
   margin: 0 auto;
+}
+
+.tamanho{
+  width: 500px;
+  margin: 0 auto;
+}
+
+.collapsible, .btn-large{
+  box-shadow: none;
 }
 
 .formulario-cadastro input{
