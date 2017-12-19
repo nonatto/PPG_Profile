@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import css-->
+  <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="..//css/font-awesome.min.css">
+  <!-- Import fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+  <title>PPG Profile | Cadastrar Aluno</title>
+</head>
+
+<body>
+  <div class="row ppgprofile">
+<!-- Navbar -->
+    <nav class="nav-extended">
+      <div class="nav-wrapper container">
+        <a href="/" itemprop="url" class="brand-logo site-logo">PPG Profile</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class="dropdown-button" href="#" data-activates="dropdown1">
+              <div class="chip profile">
+                Olá, <span>Edicarla Silva!</span>
+              </div>
+              <i class="material-icons right">arrow_drop_down</i>
+            </a>
+          </li>
+        </ul>
+        <ul id='dropdown1' class='dropdown-content dropdown-ppgprofile'>
+          <li><a href="/app.html"><i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a></li>
+          <li><a href="/instituicao/add.html"><i class="fa fa-university" aria-hidden="true"></i>Instituição</a></li>
+          <li><a href="/departamento/add.html"><i class="fa fa-home" aria-hidden="true"></i>Departamento</a></li>
+          <li><a href="/curso/add.html"><i class="fa fa-list" aria-hidden="true"></i>Curso</a></li>
+          <li><a href="/professor/add.html"><i class="fa fa-user" aria-hidden="true"></i>Professor</a></li>
+          <li><a href="/aluno/add.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Aluno</a></li>
+          <li class="divider"></li>
+          <li><a href="/logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></li>
+        </ul>
+      </div>
+  <!-- Header -->
+      <div class="nav-header center">
+        <h3>Programa de Pós-Graduação</h3>
+        <div class="tagline">Análise do perfil dos alunos</div>
+      </div>
+      <div class="container">
+        <div class="nav-wrapper">
+          <ul class="left hide-on-med-and-down">
+            <li><a href="/app.html"><i class="fa fa-tachometer fa-ppgprofile" aria-hidden="true"></i>Dashboard</a></li>
+            <li><a href="/instituicao/add.html"><i class="fa fa-university fa-ppgprofile" aria-hidden="true"></i>Instituição</a></li>
+            <li><a href="/departamento/add.html"><i class="fa fa-home fa-ppgprofile" aria-hidden="true"></i>Departamento</a></li>
+            <li><a href="/curso/add.html"><i class="fa fa-list fa-ppgprofile" aria-hidden="true"></i>Curso</a></li>
+            <li><a href="/professor/add.html"><i class="fa fa-user fa-ppgprofile" aria-hidden="true"></i>Professor</a></li>
+            <li><a href="/aluno/add.html"  class="active"><i class="fa fa-graduation-cap fa-ppgprofile" aria-hidden="true"></i>Aluno</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/"><i class="fa fa-search"></i></a></li>
+            <li><a href="/"><i class="fa fa-bell-o"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Menu Mobile -->
+    <ul class="side-nav" id="nav-mobile">
+      <li class="site-nav">
+        <a href="/app.html">
+          <i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard</a>
+      </li>
+      <li class="site-nav">
+        <a href="/instituicao/add.html">
+          <i class="fa fa-university" aria-hidden="true"></i>Instituição</a>
+      </li>
+      <li class="site-nav">
+        <a href="/departamento/add.html">
+          <i class="fa fa-home" aria-hidden="true"></i>Departamento</a>
+      </li>
+      <li class="site-nav">
+        <a href="/curso/add.html">
+          <i class="fa fa-list" aria-hidden="true"></i>Curso</a>
+      </li>
+      <li class="site-nav">
+        <a href="/professor/add.html">
+          <i class="fa fa-user" aria-hidden="true"></i>Professor</a>
+      </li>
+      <li class="site-nav">
+        <a href="/aluno/add.html">
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>Aluno</a>
+      </li>
+      <li class="site-nav">
+        <a href="/">
+          <i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+      </li>
+    </ul>
+  </div>
+  <main role="main">
+    <section class="main">
+      <div class="row">
+        <div class="container">
+          <div class="col m12 s12">
+            <ul class="tabs tabs-fixed-width tabs-ppgprofile">
+              <li class="tab col s12 m6">
+                <a href="#add-professor">
+                  <i class="fa fa-plus fa-ppgprofile" aria-hidden="true" class="active"></i>Cadastrar Aluno
+                </a>
+              </li>
+              <li class="tab col s12 m6">
+                <a href="/" target="_blank">
+                  <i class="fa fa-list fa-ppgprofile" aria-hidden="true"></i>Listar Alunos
+                </a>
+              </li>
+            </ul>
+            <div id="add-professor">
+              <form class="ppgprofile formulario-cadastro">
+                <div class="row">
+                  <div class="">
+                    <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header active"><i class="fa fa-plus" aria-hidden="true"></i>Informações Pessoais</div>
+                      <div class="collapsible-body"><span>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>Nome</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>Sobrenome</label>
+                        </div>
+                        <div class="input-field">
+                          <select>
+                            <option value="" disabled selected>Escolha um gênero</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Feminino</option>
+                          </select>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>CPF</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>Data de nascimento</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>Nacionalidade</label>
+                        </div>
+                      </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header active"><i class="fa fa-plus" aria-hidden="true"></i>Endereço</div>
+                      <div class="collapsible-body"><span>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>Logradouro</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="number" class="validate" required>
+                          <label>Número</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>Bairro</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>CEP</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>Cidade</label>
+                        </div>
+                        <div class="input-field">
+                          <input id="icon_prefix" type="text" class="validate" required>
+                          <label>Estado</label>
+                        </div>
+                      </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header active"><i class="fa fa-plus" aria-hidden="true"></i>Informações Sobre a Graduação</div>
+                      <div class="collapsible-body"><span>
+                        <div class="input-field">
+                          <select>
+                            <option value="" disabled selected>Escolha uma instituição</option>
+                            <option value="1">Universidade Federal da Bahia (UFBA)</option>
+                            <option value="2">Universidade Católica de Salvador (UCSAL)</option>
+                          </select>
+                        </div>
+                        <div class="input-field">
+                          <select>
+                            <option value="" disabled selected>Escolha um curso</option>
+                            <option value="1">Sistemas de Informação (UFBA)</option>
+                            <option value="2">Ciência da Computação (UFBA)</option>
+                          </select>
+                        </div>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="number" class="validate" required>
+                            <label>Coeficiente de rendimento</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Ano de conclusão</label>
+                        </div>
+                      </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header active"><i class="fa fa-plus" aria-hidden="true"></i>Informações Sobre a Pós-Graduação</div>
+                      <div class="collapsible-body"><span>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Curso</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Área  de conhecimento</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Coeficiente de rendimento</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Semestre de ingresso</label>
+                        </div>
+                        <div class="input-field">
+                          <select>
+                            <option value="" disabled selected>Escolha uma dedicação</option>
+                            <option value="1">Exclusiva</option>
+                            <option value="2">Parcial</option>
+                          </select>
+                        </div>
+                        <div class="input-field">
+                          <select>
+                            <option value="" disabled selected>Escolha um título</option>
+                            <option value="1">Mestrado</option>
+                            <option value="2">Doutorado</option>
+                          </select>
+                          <select>
+                            <option value="" disabled selected>Escolha um orientador</option>
+                            <option value="1">Ivan Machado</option>
+                            <option value="2">Eduardo Almeida</option>
+                          </select>
+                          <select>
+                            <option value="" disabled selected>Escolha um co-orientador</option>
+                            <option value="1">Gabriela Mota</option>
+                            <option value="2">Mariana Silva</option>
+                          </select>
+                        </div>
+                      </span></div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header active"><i class="fa fa-plus" aria-hidden="true"></i>Informações Sobre a Defesa</div>
+                      <div class="collapsible-body"><span>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Data da defesa</label>
+                        </div>
+                        <select>
+                          <option value="" disabled selected>Escolha uma avaliação</option>
+                          <option value="1">Aprovado</option>
+                          <option value="2">Reprovado</option>
+                        </select>
+                        <div class="input-field">
+                            <input id="icon_prefix" type="text" class="validate" required>
+                            <label>Nota</label>
+                        </div>
+                      </span></div>
+                    </li>
+                  </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m12">
+                    <div class="button-login tamanho">
+                      <a class="waves-effect waves-light btn-large">Cadastrar</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="center">
+          © PPG Profile | Todos os Direitos Reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../js/option_selection.js" type="text/javascript"></script>
+  <script src="../js/themes_support/api.jquery.js" type="text/javascript"></script>
+  <script src="../js/vendor.js" defer="defer"></script>
+  <script src="../js/theme.js" defer="defer"></script>
+</body>
+</html>
