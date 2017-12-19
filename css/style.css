@@ -16,10 +16,9 @@ html{
   font-family: 'Oswald', sans-serif;
 }
 
-section.main {
-  min-height: 500px;
+section.main{
+  min-height: 600px;
 }
-
 /* PPG PROFILE LOGIN*/
 .bg-login{
   background: #090a37;
