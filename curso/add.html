@@ -110,7 +110,7 @@
                 </a>
               </li>
               <li class="tab col s12 m6">
-                <a href="/" target="_blank">
+                <a href="#list-curso">
                   <i class="fa fa-list fa-ppgprofile" aria-hidden="true"></i>Listar Cursos
                 </a>
               </li>
@@ -160,6 +160,65 @@
                   </div>
                 </div>
               </form>
+            </div>
+            <div id="list-curso" class="formulario-cadastro">
+              <table class="bordered">
+                <thead>
+                  <tr>
+                      <th>Nome</th>
+                      <th>Campus</th>
+                      <th>Turno</th>
+                      <th>Ano de criação</th>
+                      <th>Conceito MEC</th>
+                      <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sistemas de Informação</td>
+                    <td>Ondina</td>
+                    <td>Noturno</td>
+                    <td>2010</td>
+                    <td>5,0</td>
+                    <td>
+                      <div class="col m1">
+                        <a href="#modal1"><i class="fa fa-file-o" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="col m1">
+                        <a href="/curso/edit.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                      </div>
+                      <div class="col m1">
+                        <a href="#modal2"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Modal Structure View-->
+              <div id="modal1" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                  <h4>Sistemas de Informação</h4>
+                  <p>Campus: Ondina</p>
+                  <p>Turno: Noturno</p>
+                  <p>Ano de Criação: 2010</p>
+                  <p>Conceito MEC: 5,0</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="/curso/edit.html" class="modal-action modal-close waves-effect waves-green btn-flat ">Editar</a>
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Fechar</a>
+                </div>
+              </div>
+              <!-- Modal Structure Trash-->
+              <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <h4>Excluir</h4>
+                  <p>Tem certeza que deseja excluir "Sistemas de Informação"?"</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><span class="excluir">Excluir</span></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
