@@ -166,7 +166,7 @@ span.excluir{
   padding: 20px 0;
   background-color: #090a37;
   color: #FFF;
-  /* position: absolute; */
+  position: absolute;
   bottom: 0px;
   width: 100%;
 }
