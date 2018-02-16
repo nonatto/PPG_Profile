@@ -4,7 +4,7 @@ define('DB_NAME', 'ppgprofile');
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'Carlinha123');
 /** nome do host do MySQL */
 define('DB_HOST', 'localhost');
 /** caminho absoluto para a pasta do sistema **/
