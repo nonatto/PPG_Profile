@@ -5,7 +5,7 @@ function updateDepartamento() {
 	$selectDept = $('select[name="customer[\'idDepartamento\']"]').empty();
 	$selectDept.append('<option value="">Selecione um departamento</option>');
 	if (id) {
-		url = 'http://ppgprofile.000webhostapp.com/ppgprofile/implementation/departamento/departamento-service.php?id=' + id; // Servidor Web
+		url = 'http://localhost:8080/ppgprofile/implementation/departamento/departamento-service.php?id=' + id; // Servidor Web
 		//url = 'http://localhost/ppgprofile/implementation/departamento/departamento-service.php?id=' + id; //Servidor Local
 		promise = $.ajax(url);
 		promise.done(function (response) {
@@ -29,7 +29,7 @@ function updateCurso() {
 	$selectCurso = $('select[name="customer[\'idCursoGraduacao\']"]').empty();
 	$selectCurso.append('<option value="">Selecione um curso</option>');
 	if (id) {
-		url = 'http://ppgprofile.000webhostapp.com/ppgprofile/implementation/departamento/departamento-service.php?id=' + id; // Servidor Web
+		url = 'http://localhost:8080/ppgprofile/implementation/curso/curso-service.php?id=' + id; // Servidor Web
 		//url = 'http://localhost/ppgprofile/implementation/curso/curso-service.php?id=' + id; //Servidor Local
 		promise = $.ajax(url);
 		promise.done(function (response) {
@@ -45,4 +45,3 @@ $(document).ready(function () {
 	var $selectInstituicao = $('select[name="customer[\'idInstituicao\']"]');
 	$selectInstituicao.on('change', updateCurso);
 });
-

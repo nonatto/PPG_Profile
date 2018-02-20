@@ -36,7 +36,7 @@ add();
                     <div class="uk-form-controls">
                      <select class="uk-select" id="form-stacked-select" required name="customer['idInstituicao']" id="id_instituicao">
                       <option value="">Selecione a instituição</option>
-                      <?php 
+                      <?php
                       $sql = "SELECT * FROM instituicao";
                       $bd=open_database();
                       $resultado = mysqli_query($bd, $sql);
@@ -53,7 +53,7 @@ add();
                   <label class="uk-form-label required" for="form-stacked-select">Departamento</label>
                   <div class="uk-form-controls">
                    <select class="uk-select" id="form-stacked-select" required name="customer['idDepartamento']" id="id_departamento">
-                    
+
                   </select>
                 </div>
               </div>
